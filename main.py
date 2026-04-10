@@ -1,5 +1,5 @@
 import asyncio
-from aiogram import Bot, Dispatcher
+from aiogram import Bot, Dispatcher 
 from aiogram.types import Message
 from aiogram.filters import Command
 from aiogram.utils.keyboard import ReplyKeyboardBuilder
@@ -402,7 +402,7 @@ async def handle(message: Message):
 
                 score = min(score, 10)
                 fish_bar = fish_rating(score)
-                text_score = score_text(score)
+                text_score = score_text(score, lang)
 
                 if lang == "ro":
                     response = (
