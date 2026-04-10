@@ -3,8 +3,8 @@ from aiogram import Bot, Dispatcher
 from aiogram.types import Message
 from aiogram.filters import Command
 from aiogram.utils.keyboard import ReplyKeyboardBuilder
-import requests
 import os
+import requests
 API_KEY = "8f3f02db86f531f7507476d4836bf1b4"
 
 def get_weather(city):
@@ -87,6 +87,7 @@ def get_forecast(city):
 
 
 TOKEN = os.getenv("TOKEN")
+
 user_period = {}
 
 bot = Bot(token=TOKEN)
